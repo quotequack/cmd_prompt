@@ -6,4 +6,4 @@ edition = "2021"
 [dependencies]
 fltk = "1.3"
 rdev = "0.5"
-
+fltk-theme = "0.7"

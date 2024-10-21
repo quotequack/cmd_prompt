@@ -43,6 +43,7 @@ name = "cmds"
 version = "0.1.0"
 dependencies = [
  "fltk",
+ "fltk-theme",
  "rdev",
 ]
 
@@ -153,6 +154,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "30bbe32c3f9f72469e2cf2a62edc74ef990b81c2caf082f53fd67060ce0c9893"
 dependencies = [
  "cmake",
+]
+
+[[package]]
+name = "fltk-theme"
+version = "0.7.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "03302d43154c9c51b4297a96f40c85ea913bb15ea27b6a38665284ddae8ac3d7"
+dependencies = [
+ "fltk",
 ]
 
 [[package]]
