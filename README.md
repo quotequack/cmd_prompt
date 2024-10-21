@@ -28,7 +28,7 @@ cargo build --release && sudo cp target/release/cmds /usr/local/bin/
 ### Step 1
 Clone this repo using
 ``` bash 
-git clone https://quotequack/cmds/ && cd cmds
+git clone https://quotequack/cmd_prompt/ && cd cmd_prompt
 ```
 ### Step 2
 Compile and add it as a command
