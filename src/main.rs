@@ -39,37 +39,7 @@ fn process_input(input: &str) {
     match input {
         "hello;" => println!("You typed 'hello'!"),
         "exit;" => println!("Exiting..."),
-        "quack;" => quack(true),
-        "quack 0;" => quack(false),
-        "paste;" => paste(true),
-        "paste 0;" => paste(false),
-        "typer;" => typer(true),
-        "typer 0;" => typer(false),
         _ => println!("Unrecognized command: {}", input),
     }
 }
 
-fn quack(arg: bool) {
-    if arg {
-        Command::new("quack").arg("&").spawn().expect("quack fail");
-    } else {
-        Command::new("pkill").arg("quack").spawn().expect("shotgun miss");
-    }
-}
-
-fn paste(arg: bool) {
-    if arg {
-        Command::new("forcepaste").arg("&").spawn().expect("paste fail");
-    } else {
-        Command::new("pkill").arg("forcepaste").spawn().expect("shotgun miss");
-    }
-}
-
-
-fn typer(arg: bool) {
-    if arg {
-        Command::new("rustytyper").arg("&").spawn().expect("typer fail");
-    } else {
-        Command::new("pkill").arg("rustytyper").spawn().expect("shotgun miss");
-    }
-}
